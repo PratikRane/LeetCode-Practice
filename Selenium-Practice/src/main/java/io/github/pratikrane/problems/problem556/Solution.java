@@ -24,7 +24,13 @@ public class Solution {
 		}
 		swap(number, min, i - 1);
 		Arrays.sort(number, i, n);
-		return Integer.parseInt(String.copyValueOf(number));
+		int solution;
+		try {
+			solution = Integer.parseInt(String.copyValueOf(number));
+		} catch (final NumberFormatException e) {
+			solution = -1;
+		}
+		return solution;
 	}
 
 	public int nextGreaterElement(int n) {
