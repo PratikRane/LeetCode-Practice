@@ -17,6 +17,7 @@ public class Solution {
 			if (j > -1 && b.charAt(j) == '1') {
 				carry++;
 			}
+
 			if (carry % 2 == 1) {
 				sb.append('1');
 			} else {
